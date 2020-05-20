@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Victoriouize</title>
+  <link rel="stylesheet" href="style/master.css">
+  <link rel="shortcut icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header id="home">
+    <h1 class="animatedText"><b>안녕하세요!</b></h1>
+    <p class="animatedText">Welcome to My Blog !</p>
+  </header>
+
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#post">Post</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div id="quotes">
+    <p><em>"Everything Is Possible If You Put Enough Faith In It"</em></p>
+  </div>
+
+  <main id="post" class="flex">
+    <div class="content">
+      <article class="container">
+        <h2>History of Chess</h2>
+        <img src="https://images.unsplash.com/photo-1536743939714-23ec5ac2dbae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="chess history" class="picture2">
+
+        <p>The history of chess can be traced back nearly 1500 years, although the earliest origins are uncertain. The earliest predecessor of the game probably originated in India, before the 6th century AD. From India, the game spread to Persia.
+          When the Arabs conquered Persia, chess was taken up by the Muslim world and subsequently spread to Southern Europe. In Europe, chess evolved into roughly its current form in the 15th century.</p>
+
+        <p><em>"Romantic chess" </em> was the predominant chess playing style from the late 15th century to the 1880s. Chess games of this period emphasised more on quick, tactical maneuvers rather than long-term strategic planning. The Romantic era
+          of
+          play was followed by the Scientific, Hypermodern, and New Dynamism eras. In the second half of the 19th century, modern chess tournament play began, and the first World Chess Championship was held in 1886. The 20th century saw great
+          leaps forward in chess theory and the establishment of the World Chess Federation (FIDE). In 1997, a computer first beat a chess world champion in the famous Deep Blue versus Garry Kasparov match, ushering in an era of computer domination.
+          Since then, computer analysis – which originated in the 1970s with the first programmed chess games on the market – has contributed to much of the development in chess theory and has become an important part of preparation in professional
+          human chess. Later developments in the 21st century made the use of computer analysis far surpassing the ability of any human player accessible to the public. Online gaming, which first appeared in the mid-1990s, also became popular in the
+          21st century.
+        </p>
+
+        <p> <strong>Source : </strong> <a href="https://en.wikipedia.org/wiki/History_of_chess" target="_blank">Wikipedia</a></p>
+      </article>
+    </div>
+
+    <aside id="profile" class="container">
+      <h2>About Me</h2>
+      <div>
+        <img src="assets/2r.jpg" alt="Nathanael Victorious">
+      </div>
+
+      <h3>Nathanael Victorious</h3>
+      <p class="title">College Student</p>
+      <p>Hello there ! I'm a 2nd Year Computer Science student at Tarumanagara University, i was very enthusiast about Technology and stuff.
+        My current hobby is Chess and Table Tennis</p>
+
+    </aside>
+  </main>
+
+  <a href="index.html" class="button">Previous</a>
+
+  <div id="allcomments" class="container">
+    <h3>Comments</h3>
+    <ul id="pastcomments"></ul>
+    <form id="newcomment">
+      <label for="tbName">First Name or Initials</label>
+      <br>
+      <input id="tbName" type="text" maxlength="20" required>
+      <br>
+      <label for="txComment">Your Comment / Question</label>
+      <br>
+      <textarea id="txComment" maxlength="4096" required style="width:96%"></textarea>
+      <br>
+      <input type="submit" id="btnSubmitComment" value="Submit Comment">
+    </form>
+  </div>
+
+  <footer id="contact">
+    <h2>Find Me !</h2>
+
+    <a href="https://www.facebook.com/nathanael.victoriuskaramoy" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://www.youtube.com/channel/UCCpU7rTFAqHNn121hgsEhIw" target="_blank" class="fa fa-youtube"></a>
+    <a href="https://www.instagram.com/nathanaelvictorious/" target="_blank" class="fa fa-instagram"></a>
+    <a href="https://www.linkedin.com/in/nathanaelvictorious" target="_blank" class="fa fa-linkedin"></a>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-database.js"></script>
+
+  <script src="assets/script.js"></script>
+
+</body>
+
+</html>
