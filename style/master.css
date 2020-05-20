@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/*-------------header and navbar-----------------*/
+header {
+  font-size: 50px;
+  padding: 100px;
+  text-align: center;
+  color: white;
+  font-family: 'Righteous', cursive;
+
+  background-image: url("headerImage.jpg");
+
+  min-height: 380px;
+  background-position: center;
+  background-size: cover;
+}
+
+div a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+div a:hover {
+  color: #a7e0e1;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #222;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  font-family: 'Righteous', cursive;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #a7e0e1;
+  color: black;
+}
+
+/*-------------------body-----------------------*/
+
+body {
+  background-color: #192d4d;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#quotes {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  width: 100%;
+  padding: 20px;
+}
+
+main {
+  padding: 10px;
+}
+
+.title {
+  color: grey;
+}
+
+.container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  margin: 0 0 2% 2%;
+}
+
+.content {
+  width: 73%;
+  order: 1;
+}
+
+#profile {
+  width: 25%;
+  height: 65%;
+  margin: 0 1%;
+  order: 2;
+}
+
+#profile div {
+  text-align: center;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 7px;
+
+  background-color: #a7e0e1;
+  color: white;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+
+.button:hover {
+  opacity: 0.75;
+}
+
+.picture2 {
+  width: 100%;
+  height: auto;
+}
+
+/*-------------animation----------------*/
+.animatedText {
+  animation: fadeAndScale 1s cubic-bezier(.81,.14,.11,.8);
+  transform-origin: center bottom;
+}
+
+@keyframes fadeAndScale {
+  from {
+    opacity: 0;
+    transform: scale3d(.75, .75, 1);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*------------------flex box--------------------*/
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/*-------------footer--------------*/
+
+footer {
+  width: 100%;
+  padding : 20px 0px;
+  color : white;
+  background-color: #222;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Righteous', cursive;
+}
+
+/*-------------social media icons--------------*/
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/*------------------comment---------------------*/
+#allcomments {
+  position: static;
+  width: 96.5%;
+}
+
+ul#pastcomments {
+  list-style-type: none;
+}
+
+ul#pastcomments li:before {
+  font-family: 'Playfair Display', serif;
+  font-size: 24pt;
+  color: gray;
+
+  position: relative;
+  top: 8px;
+}
+
+ul#pastcomments li {
+  margin: 0 0 2em 0;
+  padding: 10px;
+}
+
+ul#pastcomments li span {
+  font-size: 80%;
+  color: gray;
+  font-style: italic;
+}
+
+form#newcomment textarea {
+  height: 72px;
+}
+
+form#newcomment label {
+  display: inline-block;
+  margin: 1em 0 0 0;
+}
+
+form#newcomment textarea,
+form#newcomment input[type="text"] {
+  margin-top: 0;
+}
+
+
+/*-------------media queries-------------*/
+
+@media screen and (max-width: 800px) {
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .content, #profile {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .picture {
+    width: 100%;
+    height: auto;
+  }
+
+  #home {
+    max-height: 150px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #home h1,
+  #home p {
+    font-size: 30px;
+    word-break: break-all;
+  }
+
+}
